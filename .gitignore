@@ -127,4 +127,10 @@ appsettings.*.json
 *.vsp
 *.vspscc
 *.vssscc
+
+
+# Ignore everything in Images/
 Images/*
+
+# But don't ignore the .gitkeep file
+!Images/.gitkeep
