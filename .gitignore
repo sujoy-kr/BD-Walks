@@ -1,0 +1,130 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# .NET Core / .NET 5/6/7+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# VS 2022 config folders
+.vs/
+
+# Rider IDE settings (if JetBrains Rider is used)
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish artifacts
+*.publishsettings
+*.azurePubxml
+*.pubxml
+*.pfx
+*.key
+*.cer
+
+# Azure Web App publish folder
+.publish/
+
+# Coverage and testing results
+TestResults/
+*.coverage
+*.coveragexml
+*.codecoverage
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# DotCover
+*.dotCover
+
+# StyleCop
+StyleCopReport.xml
+
+# TFS
+$tf/
+
+# Rider & VS Code workspace
+.vscode/
+*.code-workspace
+
+# Backup & temp files
+*.bak
+*.tmp
+*.old
+*.swp
+*.swn
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+# Uncomment if packages folder is not used and `Restore` is used instead
+# !**/packages/*.csproj
+# !**/packages.config
+
+# Node.js (if used in project)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+logs/
+
+# Entity Framework
+Migrations/
+
+# Local DB files
+*.mdf
+*.ldf
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Secrets
+secrets.json
+appsettings.*.json
+!appsettings.json
+
+# Rider
+.idea/
+
+# VS for Mac
+.vscode/
+*.csproj.user
+
+# Others
+*.dbmdl
+*.sdf
+*.psess
+*.vsp
+*.vspscc
+*.vssscc
+Images/*
