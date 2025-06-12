@@ -7,7 +7,6 @@ namespace BDWalks.API.Data
     public class BDWalksAuthDbContext : IdentityDbContext
     {
         public BDWalksAuthDbContext(DbContextOptions<BDWalksAuthDbContext> options) : base(options) { }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

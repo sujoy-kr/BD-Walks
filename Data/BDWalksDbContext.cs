@@ -5,8 +5,7 @@ namespace BDWalks.API.Data
 {
     public class BDWalksDbContext : DbContext
     {
-        public BDWalksDbContext(DbContextOptions<BDWalksDbContext> dbContextOptions) : base(dbContextOptions)
-        { }
+        public BDWalksDbContext(DbContextOptions<BDWalksDbContext> dbContextOptions) : base(dbContextOptions) { }
 
         public DbSet<Difficulty> Difficulties { get; set; }
         public DbSet<Region> Regions { get; set; }

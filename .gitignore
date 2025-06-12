@@ -95,7 +95,7 @@ yarn-error.log
 
 # Logs
 *.log
-logs/
+
 
 # Entity Framework
 Migrations/
@@ -128,9 +128,12 @@ appsettings.*.json
 *.vspscc
 *.vssscc
 
-
 # Ignore everything in Images/
 Images/*
-
 # But don't ignore the .gitkeep file
 !Images/.gitkeep
+
+# Ignore everything in Images/
+Logs/*
+# But don't ignore the .gitkeep file
+!Logs/.gitkeep

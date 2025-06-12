@@ -71,10 +71,8 @@ namespace BDWalks.API.Controllers
 
                         return Ok(loginUserResponseDto);
                     }
-
                 }
             }
-
             return BadRequest("Wrong credentials.");
         }
     }
