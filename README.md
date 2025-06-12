@@ -112,32 +112,34 @@ BDWalks.API.sln
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/sujoy-kr/BD-Walks.git
-    cd BD-Walks
-    ```
+   ```bash
+   git clone https://github.com/sujoy-kr/BD-Walks.git
+   cd BD-Walks
+   ```
 
-2. **Apply migrations and create both databases:**
+2. **Add migrations and create both databases:**
 
-    ```bash
-    # Apply migrations for main data (regions, walks, images)
-    dotnet ef database update --project BDWalks.API.csproj --context BDWalksDbContext
+   ```bash
+   # Create migration and apply for the main application database
+   dotnet ef migrations add "init" --context "BDWalksDbContext"
+   dotnet ef database update --context "BDWalksDbContext"
 
-    # Apply migrations for authentication and identity
-    dotnet ef database update --project BDWalks.API.csproj --context BDWalksAuthDbContext
-    ```
+   # Create migration and apply for the auth/identity database
+   dotnet ef migrations add "init" --context "BDWalksAuthDbContext"
+   dotnet ef database update --context "BDWalksAuthDbContext"
+   ```
 
 3. **Run the application:**
 
-    ```bash
-    dotnet run --project BDWalks.API.csproj
-    ```
+   ```bash
+   dotnet run --project BDWalks.API.csproj
+   ```
 
 4. **Access the Swagger UI at:**
 
-    ```
-    https://localhost:7298/swagger/index.html
-    ```
+   ```
+   https://localhost:7298/swagger/index.html
+   ```
 
 ## Next Implementation
 
