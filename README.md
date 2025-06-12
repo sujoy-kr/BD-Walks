@@ -35,39 +35,39 @@ BDWalks.API.csproj
 BDWalks.API.http
 BDWalks.API.sln
 
-├─ Controllers               // Contains API controllers handling HTTP requests ( auth, images, regions, walks)
+├─ Controllers
 │  ├─ AuthController.cs
 │  ├─ ImagesController.cs
 │  ├─ RegionsController.cs
 │  └─ WalksController.cs
 
-├─ CustomActionFilters       // Custom filters for model validation
+├─ CustomActionFilters
 │  └─ ValidateModelAttribute.cs
 
-├─ Data                      // Entity Framework DbContext classes for database access
+├─ Data
 │  ├─ BDWalksAuthDbContext.cs
 │  └─ BDWalksDbContext.cs
 
-├─ Images                   // Directory used to store uploaded image files
+├─ Images
 │  └─ .gitkeep
 
-├─ Interfaces               // Abstractions for repositories (For dependency injection)
+├─ Interfaces
 │  ├─ IImageRepository.cs
 │  ├─ IRegionRepository.cs
 │  ├─ ITokenRepository.cs
 │  └─ IWalksRepository.cs
 
-├─ Logs                    // Folder intended for log files
+├─ Logs
 │  └─ .gitkeep
 
-├─ Mappings                // AutoMapper profiles for DTO-to-domain (and reverse too) object mapping
+├─ Mappings
 │  └─ AutoMapperProfiles.cs
 
-├─ Middlewares             // Custom middleware components
+├─ Middlewares
 │  └─ ExceptionHandlerMiddleware.cs
 
 ├─ Models
-│  ├─ DTO                  // Data Transfer Objects grouped by feature
+│  ├─ DTO
 │  │  ├─ DifficultyDtos
 │  │  │  └─ DifficultyDto.cs
 │  │  ├─ ImageDtos
@@ -86,23 +86,23 @@ BDWalks.API.sln
 │  │     ├─ UpdateWalkRequestDto.cs
 │  │     ├─ UpdateWalkResponseDto.cs
 │  │     └─ WalkDto.cs
-│  └─ Domain               // Core domain entities used throughout the application
+│  └─ Domain
 │     ├─ Difficulty.cs
 │     ├─ Image.cs
 │     ├─ Region.cs
 │     └─ Walk.cs
 
-├─ Program.cs              // Main entry point
+├─ Program.cs
 ├─ Properties
 │  └─ launchSettings.json
 
-├─ Repositories            // implementations of interfaces (DI)
+├─ Repositories
 │  ├─ LocalImageRepository.cs
 │  ├─ SQLRegionRepository.cs
 │  ├─ SQLWalkRepository.cs
 │  └─ TokenRepository.cs
 
-├─ Validators              // Validation classes
+├─ Validators
 │  └─ ImageUploadValidator.cs
 
 └─ appsettings.json
