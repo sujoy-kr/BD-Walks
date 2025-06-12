@@ -132,7 +132,7 @@ BDWalks.API.sln
 3. **Run the application:**
 
    ```bash
-   dotnet run --project BDWalks.API.csproj
+   dotnet run
    ```
 
 4. **Access the Swagger UI at:**
